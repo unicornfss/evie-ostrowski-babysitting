@@ -400,6 +400,12 @@ nav a:hover {
   font-weight: 500;
 }
 
+.area {
+  margin: 0.55rem 0 0;
+  max-width: 36rem;
+  color: var(--ink-soft);
+}
+
 .contact {
   background: #e7efeb;
 }

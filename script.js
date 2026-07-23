@@ -21,7 +21,7 @@ revealItems.forEach((item, index) => {
 const CONTACT_EMAIL = "evierostrowski@gmail.com";
 
 // Footer "Last updated" — set this when you make a content change to deploy
-const LAST_UPDATED = "2026-07-23T22:00:00";
+const LAST_UPDATED = "2026-07-23T22:06:00";
 
 // Messaging / social — replace with real usernames when ready
 const MESSENGER_URL = "https://m.me/YOUR_FACEBOOK_USERNAME";
