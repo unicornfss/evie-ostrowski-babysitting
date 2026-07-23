@@ -212,6 +212,21 @@ nav a:hover {
   border-color: rgba(255, 255, 255, 0.55);
 }
 
+.btn.ghost:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.btn-icon {
+  gap: 0.55rem;
+}
+
+.btn-icon svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
 .about,
 .trust,
 .offer,
@@ -378,6 +393,13 @@ nav a:hover {
   background: var(--sage);
 }
 
+.rates {
+  margin: 1.4rem 0 0;
+  max-width: 36rem;
+  color: var(--ink-soft);
+  font-weight: 500;
+}
+
 .contact {
   background: #e7efeb;
 }
@@ -386,6 +408,12 @@ nav a:hover {
   display: grid;
   gap: 1rem;
   max-width: 34rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
 label {
@@ -476,6 +504,10 @@ textarea:focus {
   color: var(--ink-soft);
 }
 
+.thanks-page .eyebrow {
+  color: var(--sage-deep);
+}
+
 .site-footer {
   padding: 2rem 6vw 2.5rem;
   border-top: 1px solid var(--line);
@@ -530,6 +562,10 @@ textarea:focus {
 @media (max-width: 560px) {
   .topbar {
     padding-inline: 1.1rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
   }
 
   nav a:nth-child(2) {
