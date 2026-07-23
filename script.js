@@ -18,10 +18,10 @@ revealItems.forEach((item, index) => {
 });
 
 // FormSubmit destination — edit here only
-const CONTACT_EMAIL = "jonski1382@gmail.com";
+const CONTACT_EMAIL = "evierostrowski@gmail.com";
 
 // Footer "Last updated" — set this when you make a content change to deploy
-const LAST_UPDATED = "2026-07-23T21:57:00";
+const LAST_UPDATED = "2026-07-23T22:00:00";
 
 // Messaging / social — replace with real usernames when ready
 const MESSENGER_URL = "https://m.me/YOUR_FACEBOOK_USERNAME";
