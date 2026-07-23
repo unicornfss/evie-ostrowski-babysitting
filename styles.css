@@ -230,6 +230,7 @@ nav a:hover {
 .about,
 .trust,
 .offer,
+.testimonials,
 .contact {
   padding: 5.5rem 6vw;
 }
@@ -266,6 +267,7 @@ nav a:hover {
 .about h2,
 .trust h2,
 .offer h2,
+.testimonials h2,
 .contact h2 {
   margin: 0 0 0.9rem;
   font-family: var(--font-display);
@@ -404,6 +406,99 @@ nav a:hover {
   margin: 0.55rem 0 0;
   max-width: 36rem;
   color: var(--ink-soft);
+}
+
+.testimonials {
+  background: linear-gradient(180deg, rgba(240, 195, 106, 0.1), rgba(240, 195, 106, 0.02));
+  overflow: hidden;
+}
+
+.quote-marquee {
+  margin-inline: -6vw;
+  padding-inline: 6vw;
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
+}
+
+.quote-track {
+  display: flex;
+  width: max-content;
+  gap: 1.25rem;
+  animation: quoteScroll 42s linear infinite;
+}
+
+.quote-marquee:hover .quote-track,
+.quote-marquee:focus-within .quote-track {
+  animation-play-state: paused;
+}
+
+.quotes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.25rem;
+  flex-shrink: 0;
+}
+
+.quotes li {
+  flex: 0 0 min(28rem, 78vw);
+}
+
+.quotes blockquote {
+  margin: 0;
+  height: 100%;
+  padding: 1.25rem 1.35rem 1.3rem;
+  border-left: 3px solid var(--sage);
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.quotes blockquote p {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+.quotes footer {
+  margin-top: 0.7rem;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+@keyframes quoteScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .quote-marquee {
+    margin-inline: 0;
+    padding-inline: 0;
+    mask-image: none;
+    overflow: visible;
+  }
+
+  .quote-track {
+    display: block;
+    width: auto;
+    animation: none;
+  }
+
+  .quote-track .quotes[aria-hidden="true"] {
+    display: none;
+  }
+
+  .quotes {
+    display: grid;
+    gap: 1.6rem;
+    max-width: 40rem;
+  }
+
+  .quotes li {
+    flex: none;
+  }
 }
 
 .contact {
@@ -581,6 +676,7 @@ textarea:focus {
   .about,
   .trust,
   .offer,
+  .testimonials,
   .contact {
     padding-inline: 1.1rem;
   }
