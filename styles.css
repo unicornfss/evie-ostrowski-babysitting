@@ -80,6 +80,47 @@ nav a:hover {
   color: var(--sage-deep);
 }
 
+.topbar-end {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.15rem;
+  height: 2.15rem;
+  border-radius: 999px;
+  background: rgba(47, 92, 82, 0.1);
+  color: var(--sage-deep);
+  text-decoration: none;
+  transition: background 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.social-btn svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  fill: currentColor;
+}
+
+.social-btn:hover {
+  background: var(--sage-deep);
+  color: var(--white);
+  transform: translateY(-1px);
+}
+
+.social-btn:focus-visible {
+  outline: 2px solid var(--sage-deep);
+  outline-offset: 3px;
+}
+
 .hero {
   position: relative;
   min-height: 92vh;
@@ -382,12 +423,6 @@ textarea:focus {
   font: inherit;
 }
 
-.fineprint {
-  margin-top: 1rem;
-  font-size: 0.85rem;
-  color: var(--ink-soft);
-}
-
 .hp {
   position: absolute;
   left: -10000px;
@@ -450,6 +485,12 @@ textarea:focus {
 
 .site-footer p {
   margin: 0.2rem 0;
+}
+
+.footer-updated {
+  margin-top: 0.85rem;
+  font-size: 0.85rem;
+  opacity: 0.85;
 }
 
 @keyframes heroZoom {

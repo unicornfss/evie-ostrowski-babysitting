@@ -17,11 +17,18 @@ revealItems.forEach((item, index) => {
   observer.observe(item);
 });
 
+// FormSubmit destination — edit here only
+const CONTACT_EMAIL = "jonski1382@gmail.com";
+
 // FormSubmit needs a real http(s) page URL — not file://
 const formUrl = document.getElementById("form-url");
 const formNext = document.getElementById("form-next");
 const form = document.getElementById("contact-form");
 const statusEl = document.getElementById("form-status");
+
+if (form) {
+  form.action = `https://formsubmit.co/${CONTACT_EMAIL}`;
+}
 
 if (formUrl && formNext) {
   const here = window.location.href.split("#")[0];
@@ -41,3 +48,15 @@ form?.addEventListener("submit", () => {
     statusEl.textContent = "Sending…";
   }
 });
+
+const lastUpdated = document.getElementById("last-updated");
+if (lastUpdated) {
+  const d = new Date(document.lastModified);
+  lastUpdated.textContent = `Last updated ${d.toLocaleString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+  })}`;
+}
