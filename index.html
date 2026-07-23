@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evie Ostrowski — Babysitting</title>
+  <meta name="description" content="Reliable babysitting with Evie Ostrowski. DBS checked and Paediatric First Aid at Work qualified." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#top">Evie Ostrowski</a>
+    <nav aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#trust">Qualifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Introduction">
+      <div class="hero-media" role="img" aria-label="Bright playroom with toys, books and building blocks"></div>
+      <div class="hero-scrim"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Babysitting</p>
+        <h1>Evie Ostrowski</h1>
+        <p class="lede">Calm, reliable care for your children — evenings, weekends, and outings with your say-so.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#contact">Get in touch</a>
+          <a class="btn ghost" href="#trust">See qualifications</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-copy">
+        <h2>Hi, I’m Evie</h2>
+        <p>
+          I’m a friendly, responsible babysitter who loves keeping children happy, safe and entertained —
+          whether that’s quiet evenings in, story time, or a trip to the park.
+        </p>
+        <p>
+          Parents can feel confident knowing I take safety seriously and keep communication clear before,
+          during and after every booking.
+        </p>
+      </div>
+      <figure class="about-media">
+        <img src="assets/evie-photo.png" alt="Evie smiling while holding a happy young child" width="900" height="1200" />
+      </figure>
+    </section>
+
+    <section id="trust" class="trust">
+      <h2>Qualified &amp; checked</h2>
+      <p class="section-intro">Peace of mind for parents, built into every booking.</p>
+      <ul class="creds">
+        <li>
+          <span class="cred-label">DBS</span>
+          <strong>DBS checked</strong>
+          <p>Enhanced disclosure held and available for parents to view on request.</p>
+        </li>
+        <li>
+          <span class="cred-label">First aid</span>
+          <strong>Paediatric First Aid at Work</strong>
+          <p>Trained to help infants and children in an emergency, including CPR and choking.</p>
+        </li>
+        <li>
+          <span class="cred-label">Care</span>
+          <strong>Age-aware &amp; calm</strong>
+          <p>Happy to follow your routines, care plans, bedtimes and house rules.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="offer">
+      <h2>What I can help with</h2>
+      <ul>
+        <li>Evening and weekend babysitting</li>
+        <li>Bedtime routines and quiet play</li>
+        <li>Outings with your permission</li>
+        <li>School-age homework support and games</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let’s arrange a booking</h2>
+      <p class="section-intro">Tell me a little about your family and when you need cover.</p>
+      <form
+        class="contact-form"
+        id="contact-form"
+        action="https://formsubmit.co/jonski1382@gmail.com"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="New babysitting enquiry — Evie Ostrowski" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" id="form-next" value="" />
+        <input type="hidden" name="_url" id="form-url" value="" />
+        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+        <label>
+          Your name
+          <input type="text" name="name" required autocomplete="name" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required autocomplete="email" />
+        </label>
+        <label>
+          Phone <span class="optional">(optional)</span>
+          <input type="tel" name="phone" autocomplete="tel" />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required placeholder="Ages of children, dates/times, and anything I should know…"></textarea>
+        </label>
+        <button class="btn primary" type="submit" id="contact-submit">Send enquiry</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+      </form>
+      <p class="fineprint">
+        Free form delivery via FormSubmit. First submission sends an activation email to
+        jonski1382@gmail.com — check Inbox and Spam, then click Activate.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>Evie Ostrowski</strong> — Babysitting</p>
+    <p>DBS checked · Paediatric First Aid at Work</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
